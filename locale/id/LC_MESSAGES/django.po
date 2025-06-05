@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-01 12:22+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: app/managers.py:14
+msgid "The Email field must be set"
+msgstr "Kolom Email harus diisi"
+
+#: app/managers.py:29
+msgid "Superuser must have is_staff=True."
+msgstr "Superuser harus memiliki is_staff=True."
+
+#: app/managers.py:31
+msgid "Superuser must have is_superuser=True."
+msgstr "Superuser harus memiliki is_superuser=True."
+
+#: app/models.py:17
+msgid "email address"
+msgstr "alamat email"
+
+#: app/models.py:28
+msgid "Article"
+msgstr "Artikel"
+
+#: app/models.py:29
+msgid "Articles"
+msgstr "Daftar Artikel"
+
+#: app/models.py:30
+msgid "title"
+msgstr "judul"
+
+#: app/models.py:31
+msgid "content"
+msgstr "konten"
+
+#: app/models.py:32
+msgid "word count"
+msgstr "jumlah kata"
+
+#: app/models.py:33
+msgid "twitter post"
+msgstr "postingan twitter"
+
+#: app/models.py:35
+msgid "status"
+msgstr "status"
+
+#: app/models.py:40
+msgid "created at"
+msgstr "dibuat pada"
+
+#: app/models.py:41
+msgid "updated at"
+msgstr "diperbarui pada"
+
+#: app/models.py:44
+msgid "creator"
+msgstr "kreator"
