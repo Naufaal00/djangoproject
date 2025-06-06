@@ -17,6 +17,6 @@ RUN poetry install --no-root
 COPY . .
 RUN chmod 755 /code/start-django.sh
 
-EXPOSE 8000
+EXPOSE 8080
 
 ENTRYPOINT [ "/code/start-django.sh" ]
