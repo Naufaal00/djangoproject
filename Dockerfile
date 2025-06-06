@@ -1,4 +1,4 @@
-FROM python:3.13-bullseye
+FROM python:3.13-bullseye AS base
 ENV PYTHONUNBUFFERED=1
 
 RUN apt update
@@ -12,11 +12,26 @@ RUN pip install poetry
 
 COPY pyproject.toml poetry.lock ./
 
+FROM base AS development
+
 RUN poetry install --no-root
+
+RUN poetry run playwright install --with-deps
 
 COPY . .
 RUN chmod 755 /code/start-django.sh
 
-EXPOSE 8080
+EXPOSE 8000
+
+ENTRYPOINT [ "/code/start-django.sh" ]
+
+FROM base AS production
+
+RUN poetry install --only main --no-root
+
+COPY . .
+RUN chmod 755 /code/start-django.sh
+
+EXPOSE 8000
 
 ENTRYPOINT [ "/code/start-django.sh" ]
